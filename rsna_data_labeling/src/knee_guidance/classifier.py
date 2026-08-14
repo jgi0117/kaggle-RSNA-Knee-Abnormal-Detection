@@ -1,37 +1,24 @@
 from .constants import LABEL_COLS
 from .guidance import GuidanceStore
 from .llm import QwenTargetClassifier
+from .prompting import build_target_prompt
 
 
 class KneeGuidanceClassifier:
     def __init__(
         self,
-        guidance_dir: str,
-        model_name: str = "Qwen/Qwen2-7B-Instruct",
-        load_in_4bit: bool = True,
+        guidance_dir,
+        model_name="Qwen/Qwen3-8B",
     ):
-        self.guidance = GuidanceStore(guidance_dir)
+        self.guidance_store = GuidanceStore(
+            guidance_dir
+        )
 
         self.llm = QwenTargetClassifier(
             model_name=model_name,
-            load_in_4bit=load_in_4bit,
-            enable_thinking=False,
         )
 
-    def predict_target(
-        self,
-        report: str,
-        target: str,
-    ):
-        guidance = self.guidance.get(target)
-
-        return self.llm.predict(
-            report=report,
-            target=target,
-            guidance=guidance,
-        )
-
-    def predict_report(
+    def classify_report(
         self,
         report: str,
     ):
@@ -39,12 +26,22 @@ class KneeGuidanceClassifier:
         raw_outputs = {}
 
         for target in LABEL_COLS:
-            label, raw = self.predict_target(
+            guidance = self.guidance_store.get(
+                target
+            )
+
+            prompt = build_target_prompt(
                 report=report,
+                target=target,
+                guidance=guidance,
+            )
+
+            label, raw_output = self.llm.predict(
+                prompt=prompt,
                 target=target,
             )
 
             predictions[target] = label
-            raw_outputs[target] = raw
+            raw_outputs[target] = raw_output
 
         return predictions, raw_outputs

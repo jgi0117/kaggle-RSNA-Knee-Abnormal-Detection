@@ -77,7 +77,6 @@ def main():
     classifier = KneeGuidanceClassifier(
         guidance_dir=args.guidance_dir,
         model_name=args.model,
-        load_in_4bit=not args.no_4bit,
     )
 
     prediction_rows = []
