@@ -6,39 +6,43 @@ def build_target_prompt(
     target: str,
     guidance: str,
 ) -> str:
-    output_schema = {
-        "target": target,
-        "label": 0,
-    }
 
     return f"""
-You are an expert musculoskeletal radiologist interpreting a knee MRI radiology report.
+You are classifying abnormalities from a knee MRI radiology report.
 
-Your task is to classify ONE target abnormality.
+This same radiology report is evaluated independently for 12 predefined targets.
+For this call, evaluate ONLY the target specified below.
+
+Each target has its own target-specific medical guidance.
+The guidance is general medical knowledge used only to interpret the report.
+
+IMPORTANT:
+- The MEDICAL GUIDANCE is NOT evidence about this patient.
+- Only statements in the RADIOLOGY REPORT may be used as patient evidence.
+- Do not classify the target as positive merely because positive findings or disease terminology appear in the guidance.
+- Ignore findings related only to other targets unless they provide direct evidence for the current TARGET.
+- Pay careful attention to negation, uncertainty, anatomical location, and differential diagnoses.
+- Interpret reports written in languages other than English according to their clinical meaning.
 
 TARGET:
 {target}
 
 MEDICAL GUIDANCE:
-The following guidance is a compact summary of external radiology/medical literature.
-Use it only as clinical interpretation context. Do not invent competition-specific rules.
-
 {guidance}
 
 RADIOLOGY REPORT:
 {report}
 
-INSTRUCTIONS:
-- The report may be written in English or another language. Interpret its medical meaning in the original language.
-- The radiology report is the evidence for this patient.
-- The medical guidance defines the relevant clinical/radiologic concepts.
-- Determine whether the report supports the presence of the TARGET abnormality.
-- Handle negation, uncertainty, anatomical compartment, and differential diagnoses carefully.
-- Do not mark a finding positive merely because a related word appears.
-- If the target is explicitly absent, normal, or not supported by the report, return label 0.
-- If the report supports the target abnormality according to the supplied guidance, return label 1.
-- Do not output reasoning, translation, markdown, or extra text.
+TASK:
+Determine whether the RADIOLOGY REPORT supports the presence of the TARGET.
 
-Return JSON only in exactly this shape:
-{json.dumps(output_schema, ensure_ascii=False)}
+Return exactly one JSON object:
+
+{{"target": "{target}", "label": 0}}
+
+or
+
+{{"target": "{target}", "label": 1}}
+
+Do not provide explanations or additional text.
 """.strip()
