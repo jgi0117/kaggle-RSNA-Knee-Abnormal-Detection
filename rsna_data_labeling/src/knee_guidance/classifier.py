@@ -1,3 +1,5 @@
+from tqdm import tqdm
+
 from .constants import LABEL_COLS
 from .guidance import GuidanceStore
 from .llm import QwenTargetClassifier
@@ -21,11 +23,21 @@ class KneeGuidanceClassifier:
     def classify_report(
         self,
         report: str,
+        show_progress: bool = False,
     ):
         predictions = {}
         raw_outputs = {}
 
-        for target in LABEL_COLS:
+        targets = LABEL_COLS
+
+        if show_progress:
+            targets = tqdm(
+                LABEL_COLS,
+                desc="Targets",
+                leave=False,
+            )
+
+        for target in targets:
             guidance = self.guidance_store.get(
                 target
             )

@@ -31,7 +31,7 @@ def parse_args():
     )
     parser.add_argument(
         "--model",
-        default="mistralai/Mistral-7B-Instruct-v0.3",
+        default="Qwen/Qwen3-8B",
     )
     parser.add_argument(
         "--no-4bit",
@@ -88,7 +88,7 @@ def main():
         desc="Guidance classification",
     ):
         predictions, raw_outputs = (
-            classifier.predict_report(
+            classifier.classify_report(
                 str(row["Report"])
             )
         )
