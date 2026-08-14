@@ -1,20 +1,21 @@
 from .constants import LABEL_COLS
 from .guidance import GuidanceStore
-from .llm import MistralTargetClassifier
+from .llm import QwenTargetClassifier
 
 
 class KneeGuidanceClassifier:
     def __init__(
         self,
         guidance_dir: str,
-        model_name: str = "mistralai/Mistral-7B-Instruct-v0.3",
+        model_name: str = "Qwen/Qwen2-7B-Instruct",
         load_in_4bit: bool = True,
     ):
         self.guidance = GuidanceStore(guidance_dir)
 
-        self.llm = MistralTargetClassifier(
+        self.llm = QwenTargetClassifier(
             model_name=model_name,
             load_in_4bit=load_in_4bit,
+            enable_thinking=False,
         )
 
     def predict_target(
