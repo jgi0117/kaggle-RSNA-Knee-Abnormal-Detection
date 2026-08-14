@@ -21,22 +21,22 @@ def parse_args():
         "--csv",
         required=True,
     )
+
     parser.add_argument(
         "--guidance-dir",
         required=True,
     )
+
     parser.add_argument(
         "--output-dir",
         required=True,
     )
+
     parser.add_argument(
         "--model",
         default="Qwen/Qwen3-8B",
     )
-    parser.add_argument(
-        "--no-4bit",
-        action="store_true",
-    )
+
     parser.add_argument(
         "--limit",
         type=int,
@@ -50,13 +50,21 @@ def parse_args():
 def main():
     args = parse_args()
 
-    output_dir = Path(args.output_dir)
+    output_dir = Path(
+        args.output_dir
+    )
+
     output_dir.mkdir(
         parents=True,
         exist_ok=True,
     )
 
-    df = pd.read_csv(args.csv)
+    # =====================================================
+    # Load data
+    # =====================================================
+    df = pd.read_csv(
+        args.csv
+    )
 
     expert_df = df[
         df[LABEL_COLS]
@@ -67,32 +75,58 @@ def main():
     if args.limit is not None:
         expert_df = expert_df.head(
             args.limit
-        )
+        ).copy()
 
     print(
         f"Expert-labeled studies: "
         f"{len(expert_df)}"
     )
 
-    classifier = KneeGuidanceClassifier(
-        guidance_dir=args.guidance_dir,
-        model_name=args.model,
+    # =====================================================
+    # Load model
+    # =====================================================
+    classifier = (
+        KneeGuidanceClassifier(
+            guidance_dir=args.guidance_dir,
+            model_name=args.model,
+        )
     )
 
+    # =====================================================
+    # Inference
+    # =====================================================
     prediction_rows = []
     raw_rows = []
+    translation_rows = []
 
-    for idx, row in tqdm(
+    study_progress = tqdm(
         expert_df.iterrows(),
         total=len(expert_df),
-        desc="Guidance classification",
-    ):
-        predictions, raw_outputs = (
-            classifier.classify_report(
-                str(row["Report"])
-            )
+        desc="Studies",
+        unit="study",
+    )
+
+    for idx, row in study_progress:
+        original_report = str(
+            row["Report"]
         )
 
+        study_progress.set_postfix(
+            index=idx
+        )
+
+        (
+            predictions,
+            raw_outputs,
+            translated_report,
+        ) = classifier.classify_report(
+            report=original_report,
+            show_progress=True,
+        )
+
+        # ---------------------------------------------
+        # Predictions
+        # ---------------------------------------------
         prediction_rows.append(
             {
                 target: (
@@ -105,6 +139,9 @@ def main():
             }
         )
 
+        # ---------------------------------------------
+        # Raw classification outputs
+        # ---------------------------------------------
         raw_rows.append(
             {
                 "index": idx,
@@ -115,11 +152,32 @@ def main():
             }
         )
 
+        # ---------------------------------------------
+        # Translation output
+        # ---------------------------------------------
+        translation_rows.append(
+            {
+                "index": idx,
+                "original_report": (
+                    original_report
+                ),
+                "translated_report": (
+                    translated_report
+                ),
+            }
+        )
+
+    # =====================================================
+    # Prediction DataFrame
+    # =====================================================
     pred_df = pd.DataFrame(
         prediction_rows,
         index=expert_df.index,
     )
 
+    # =====================================================
+    # Evaluation
+    # =====================================================
     metrics, overall_accuracy = (
         evaluate_predictions(
             expert_df,
@@ -132,44 +190,86 @@ def main():
         pred_df,
     )
 
+    # =====================================================
+    # Final prediction output
+    # =====================================================
+    translation_df = pd.DataFrame(
+        translation_rows
+    ).set_index(
+        "index"
+    )
+
     prediction_output = pd.concat(
         [
             expert_df[
                 ["Report"] + LABEL_COLS
             ],
-            pred_df.add_prefix("Pred_"),
+            translation_df[
+                ["translated_report"]
+            ],
+            pred_df.add_prefix(
+                "Pred_"
+            ),
         ],
         axis=1,
     )
 
+    # =====================================================
+    # Save
+    # =====================================================
     prediction_output.to_csv(
-        output_dir / "predictions.csv",
+        output_dir
+        / "predictions.csv",
         index=False,
     )
 
     metrics.to_csv(
-        output_dir / "metrics_by_target.csv",
+        output_dir
+        / "metrics_by_target.csv",
         index=False,
     )
 
     errors.to_csv(
-        output_dir / "errors.csv",
+        output_dir
+        / "errors.csv",
         index=False,
     )
 
-    pd.DataFrame(raw_rows).to_csv(
-        output_dir / "raw_outputs.csv",
+    pd.DataFrame(
+        raw_rows
+    ).to_csv(
+        output_dir
+        / "raw_outputs.csv",
         index=False,
     )
 
+    pd.DataFrame(
+        translation_rows
+    ).to_csv(
+        output_dir
+        / "translations.csv",
+        index=False,
+    )
+
+    # =====================================================
+    # Results
+    # =====================================================
     print()
-    print(metrics.to_string(index=False))
+
+    print(
+        metrics.to_string(
+            index=False
+        )
+    )
+
     print(
         f"\nOverall Accuracy: "
         f"{overall_accuracy:.4f}"
     )
+
     print(
-        f"Saved to: {output_dir}"
+        f"Saved to: "
+        f"{output_dir}"
     )
 
 

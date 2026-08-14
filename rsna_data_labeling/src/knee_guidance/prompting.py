@@ -1,4 +1,28 @@
-import json
+def build_translation_prompt(
+    report: str,
+) -> str:
+    return f"""
+You are translating a knee MRI radiology report into English.
+
+Translate the RADIOLOGY REPORT into clear medical English.
+
+IMPORTANT:
+- Preserve the original clinical meaning exactly.
+- Preserve all positive and negative findings.
+- Preserve uncertainty, such as "possible", "suspected", "cannot exclude", or equivalent expressions.
+- Preserve anatomical locations and laterality.
+- Preserve severity and grading information.
+- Preserve measurements and numerical values.
+- Do not summarize.
+- Do not add interpretations.
+- Do not infer diagnoses that are not stated in the original report.
+- Do not omit findings.
+- If the report is already in English, return it unchanged.
+- Output ONLY the translated radiology report.
+
+RADIOLOGY REPORT:
+{report}
+""".strip()
 
 
 def build_target_prompt(
@@ -6,7 +30,6 @@ def build_target_prompt(
     target: str,
     guidance: str,
 ) -> str:
-
     return f"""
 You are classifying abnormalities from a knee MRI radiology report.
 
@@ -22,7 +45,7 @@ IMPORTANT:
 - Do not classify the target as positive merely because positive findings or disease terminology appear in the guidance.
 - Ignore findings related only to other targets unless they provide direct evidence for the current TARGET.
 - Pay careful attention to negation, uncertainty, anatomical location, and differential diagnoses.
-- Interpret reports written in languages other than English according to their clinical meaning.
+- The RADIOLOGY REPORT has already been translated into English when necessary.
 
 TARGET:
 {target}

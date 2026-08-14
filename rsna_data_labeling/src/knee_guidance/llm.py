@@ -18,6 +18,10 @@ class QwenTargetClassifier:
         self.model_name = model_name
         self.max_input_tokens = max_input_tokens
 
+        print(
+            f"Loading tokenizer: {model_name}"
+        )
+
         self.tokenizer = AutoTokenizer.from_pretrained(
             model_name,
         )
@@ -27,6 +31,10 @@ class QwenTargetClassifier:
             bnb_4bit_quant_type="nf4",
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
+        )
+
+        print(
+            f"Loading model: {model_name}"
         )
 
         self.model = AutoModelForCausalLM.from_pretrained(
@@ -43,11 +51,11 @@ class QwenTargetClassifier:
             f"{self.model.get_memory_footprint() / 1024**3:.2f} GB"
         )
 
-    def predict(
+    def _generate(
         self,
         prompt: str,
-        target: str,
-    ):
+        max_new_tokens: int,
+    ) -> str:
         messages = [
             {
                 "role": "user",
@@ -77,7 +85,7 @@ class QwenTargetClassifier:
         with torch.inference_mode():
             outputs = self.model.generate(
                 **inputs,
-                max_new_tokens=64,
+                max_new_tokens=max_new_tokens,
                 do_sample=False,
                 pad_token_id=self.tokenizer.eos_token_id,
             )
@@ -91,6 +99,36 @@ class QwenTargetClassifier:
             skip_special_tokens=True,
         ).strip()
 
+        return raw_output
+
+    def translate(
+        self,
+        prompt: str,
+    ) -> str:
+        translated_report = self._generate(
+            prompt=prompt,
+            max_new_tokens=2048,
+        )
+
+        translated_report = translated_report.strip()
+
+        if not translated_report:
+            raise ValueError(
+                "Translation output is empty."
+            )
+
+        return translated_report
+
+    def predict(
+        self,
+        prompt: str,
+        target: str,
+    ):
+        raw_output = self._generate(
+            prompt=prompt,
+            max_new_tokens=64,
+        )
+
         label = self._parse_label(
             raw_output=raw_output,
         )
@@ -101,7 +139,6 @@ class QwenTargetClassifier:
     def _parse_label(
         raw_output: str,
     ) -> int:
-
         match = re.search(
             r"\{.*?\}",
             raw_output,
@@ -117,7 +154,9 @@ class QwenTargetClassifier:
             match.group(0)
         )
 
-        label = int(data["label"])
+        label = int(
+            data["label"]
+        )
 
         if label not in (0, 1):
             raise ValueError(
