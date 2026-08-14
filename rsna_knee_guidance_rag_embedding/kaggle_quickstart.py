@@ -1,30 +1,21 @@
-# %% [markdown]
-# Cell 1 - install
+# Cell 1
 # !pip install -q bitsandbytes
-# !pip install -e /kaggle/working/rsna_knee_guidance_rag_embedding --no-deps
+# !pip install -e /kaggle/working/kaggle-RSNA-Knee-Abnormal-Detection-clean --no-deps
 
-# %% [markdown]
-# Cell 2 - build dense embedding index
-# !python /kaggle/working/rsna_knee_guidance_rag_embedding/scripts/build_index.py \
-#   --guidance-dir /kaggle/working/rsna_knee_guidance_rag_embedding/guidance \
-#   --output-dir /kaggle/working/rsna_knee_guidance_rag_embedding/artifacts/index
-
-# %% [markdown]
-# Cell 3 - inspect retrieval
-# !python /kaggle/working/rsna_knee_guidance_rag_embedding/scripts/inspect_retrieval.py \
+# Cell 2 - quick test on 2 expert reports
+# !python /kaggle/working/kaggle-RSNA-Knee-Abnormal-Detection-clean/scripts/validate_expert.py \
 #   --csv /kaggle/input/competitions/rsna-knee-abnormality-detection/train.csv \
-#   --index-dir /kaggle/working/rsna_knee_guidance_rag_embedding/artifacts/index \
-#   --row 0
+#   --guidance-dir /kaggle/working/kaggle-RSNA-Knee-Abnormal-Detection-clean/guidance \
+#   --output-dir /kaggle/working/guidance_validation_test \
+#   --limit 2
 
-# %% [markdown]
-# Cell 4 - validate 58 expert rows
-# !python /kaggle/working/rsna_knee_guidance_rag_embedding/scripts/validate_expert.py \
+# Cell 3 - full 58-study validation
+# !python /kaggle/working/kaggle-RSNA-Knee-Abnormal-Detection-clean/scripts/validate_expert.py \
 #   --csv /kaggle/input/competitions/rsna-knee-abnormality-detection/train.csv \
-#   --index-dir /kaggle/working/rsna_knee_guidance_rag_embedding/artifacts/index \
-#   --output-dir /kaggle/working/rag_validation
+#   --guidance-dir /kaggle/working/kaggle-RSNA-Knee-Abnormal-Detection-clean/guidance \
+#   --output-dir /kaggle/working/guidance_validation
 
-# %% [markdown]
-# Cell 5 - inspect results
+# Cell 4 - inspect metrics
 # import pandas as pd
-# display(pd.read_csv("/kaggle/working/rag_validation/metrics_by_target.csv"))
-# display(pd.read_csv("/kaggle/working/rag_validation/errors.csv").head(20))
+# display(pd.read_csv("/kaggle/working/guidance_validation/metrics_by_target.csv"))
+# display(pd.read_csv("/kaggle/working/guidance_validation/errors.csv").head(30))
