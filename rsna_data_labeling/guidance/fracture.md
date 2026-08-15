@@ -21,10 +21,3 @@ MRI is highly sensitive for occult and subchondral fractures because it can show
 
 ## Reporting language useful to an LLM
 Recognize fracture, insufficiency fracture, stress/fatigue fracture, osteochondral fracture, subchondral fracture, avulsion fracture, and occult fracture. Keep bone bruise/contusion separate unless a fracture component is explicitly described.
-
-## Sources
-1. *Subchondral insufficiency fracture of the knee: progress in the pathogenesis and treatment.* 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12583073/
-2. Andriolo L, et al. *A nosographic and etiopathogenetic framework for subchondral bone marrow lesions in the knee.* 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC11736153/
-3. *Subchondral insufficiency fracture of the knee: review of current concepts and radiological differential diagnoses.* 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9068663/
-4. Parkar AP, Adriaensen MEAPM. ESSR knee MRI practice recommendations. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11399221/
-5. American College of Radiology. ACR–SPR–SSR MRI of the Knee Practice Parameter. Revised 2025. https://gravitas.acr.org/PPTS/GetDocumentView?docId=90

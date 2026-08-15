@@ -16,7 +16,3 @@ Synovitis refers to abnormal synovial membrane thickening/remodeling and, depend
 - Joint effusion alone does not prove synovitis.
 - Synovial thickening does not always mean active inflammation; remodeling and inflammatory changes can coexist.
 - Bursitis, plica, or fat-pad edema should not automatically be converted into synovitis unless the report links them to synovial inflammation/thickening.
-
-## Sources
-1. Appleton CT, et al. *Imaging-based measures of synovitis in knee osteoarthritis: A scoping review and narrative synthesis.* 2025. PMCID: PMC11999625; PMID: 40235523. https://pmc.ncbi.nlm.nih.gov/articles/PMC11999625/
-2. Parkar AP, Adriaensen MEAPM. ESSR knee MRI practice recommendations. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11399221/

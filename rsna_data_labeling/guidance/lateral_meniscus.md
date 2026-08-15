@@ -20,8 +20,3 @@ MRI is the principal modality for meniscal assessment. A simple meniscal tear is
 
 ## Lateral-meniscus emphasis
 Only abnormalities of the lateral meniscus should contribute. Lateral tears can be underdetected, particularly subtle radial/root tears and displaced fragments. Localize anterior horn, body, posterior horn, and root; note extrusion, maceration, displaced flap, and definite versus suspected language.
-
-## Sources
-1. Spinnato P, et al. *Atypically Displaced Meniscal Tears: An Educational Review with Focus on MRI and Arthroscopy.* 2025. PMCID: PMC12192316. https://pmc.ncbi.nlm.nih.gov/articles/PMC12192316/
-2. Parkar AP, Adriaensen MEAPM. ESSR knee MRI practice recommendations. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11399221/
-3. American College of Radiology. ACR–SPR–SSR MRI of the Knee Practice Parameter. Revised 2025. https://gravitas.acr.org/PPTS/GetDocumentView?docId=90

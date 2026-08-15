@@ -20,9 +20,3 @@ Knee osteoarthritis is a whole-joint degenerative process. MRI can demonstrate c
 
 ## Compartment-specific interpretation
 Only lateral tibiofemoral degeneration should contribute: lateral femoral condyle, lateral tibial plateau, lateral marginal osteophytes, related subchondral change, and associated lateral meniscal degenerative pathology. Do not transfer medial or patellofemoral abnormalities.
-
-## Sources
-1. Liew JW, et al. *Development of a Magnetic Resonance Imaging–Based Definition of Knee Osteoarthritis.* Arthritis Rheumatol. 2023; PMC available 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC10361157/
-2. *Diagnostic accuracy of candidate MRI knee osteoarthritis definitions versus radiograph in an acute ACL injury cohort.* 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC10922537/
-3. *Magnetic resonance imaging-defined knee osteoarthritis rarely occurs without cartilage damage.* 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC12796920/
-4. Parkar AP, Adriaensen MEAPM. ESSR knee MRI practice recommendations. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11399221/

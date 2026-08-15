@@ -9,13 +9,13 @@ Translate the RADIOLOGY REPORT into clear medical English.
 IMPORTANT:
 - Preserve the original clinical meaning exactly.
 - Preserve all positive and negative findings.
-- Preserve uncertainty, such as "possible", "suspected", "cannot exclude", or equivalent expressions.
+- Preserve uncertainty, including expressions such as possible, suspected,
+  favored, cannot exclude, or rule out.
 - Preserve anatomical locations and laterality.
-- Preserve severity and grading information.
-- Preserve measurements and numerical values.
+- Preserve severity, grading, measurements, and numerical values.
 - Do not summarize.
 - Do not add interpretations.
-- Do not infer diagnoses that are not stated in the original report.
+- Do not infer diagnoses that are not stated.
 - Do not omit findings.
 - If the report is already in English, return it unchanged.
 - Output ONLY the translated radiology report.
@@ -31,89 +31,68 @@ def build_target_prompt(
     guidance: str,
 ) -> str:
     return f"""
-You are classifying abnormalities from a knee MRI radiology report.
+You are classifying a knee MRI radiology report for one predefined target.
 
-This same radiology report is evaluated independently for 12 predefined targets.
-For this call, evaluate ONLY the target specified below.
+The same radiology report is evaluated independently for 12 different targets.
+For this call, evaluate ONLY the TARGET below.
 
-Each target has its own target-specific medical guidance.
-The guidance provides general medical knowledge for interpreting the report.
-It is not patient-specific evidence.
+The TARGET GUIDANCE defines what evidence should and should not count for
+this specific target. Apply it carefully.
 
 TARGET:
 {target}
 
-MEDICAL GUIDANCE:
+TARGET GUIDANCE:
 {guidance}
 
 RADIOLOGY REPORT:
 {report}
 
-CLASSIFICATION PRINCIPLES:
+GENERAL RULES:
 
-1. Use only the RADIOLOGY REPORT as evidence about this patient.
-   The MEDICAL GUIDANCE must only help interpret the meaning and clinical significance
-   of findings stated in the report.
+1. Use only the RADIOLOGY REPORT as patient-specific evidence.
 
-2. Do not classify the TARGET as positive simply because there is any minor abnormality
-   related to the target.
+2. The TARGET GUIDANCE defines the interpretation boundary for this target.
+   Do not treat examples or medical knowledge in the guidance as evidence
+   that the patient has the abnormality.
 
-3. Consider the overall strength and clinical significance of the evidence.
-   Distinguish a definite, meaningful abnormality from a subtle, minimal, low-grade,
-   equivocal, degenerative, or incidental finding.
+3. Evaluate the exact target, not merely a related abnormality.
+   A nearby anatomical finding or clinically associated condition is not
+   automatically evidence for the target.
 
-4. Severity-related language must be interpreted in context rather than by rigid keyword rules.
-   Terms describing a small amount, mild degree, low grade, subtle signal change,
-   intrasubstance/interstitial change, degeneration, or limited abnormality may represent
-   findings below the level of a clinically meaningful target abnormality.
-
-5. However, do NOT automatically assign label 0 based on words such as
-   "small", "mild", "partial", or "low-grade".
-   A finding may still be positive when the report clearly describes a genuine and
-   clinically meaningful abnormality for the TARGET.
-
-6. Conversely, do not automatically assign label 1 simply because words such as
-   "tear", "edema", "effusion", "chondrosis", "sprain", or "contusion" appear.
-   Interpret their severity, certainty, anatomical relevance, and surrounding context.
-
-7. Give greater weight to:
-   - definite diagnostic statements,
-   - clinically meaningful structural abnormalities,
-   - moderate-to-severe or high-grade abnormalities,
-   - findings emphasized in the Impression or Conclusion,
-   - multiple consistent findings supporting the same diagnosis.
-
-8. Give less weight to:
-   - minimal or trace abnormalities,
-   - subtle isolated signal changes,
-   - low-grade changes without clear structural abnormality,
-   - equivocal or suspected findings,
-   - incidental findings,
-   - abnormalities explicitly described as degenerative when they do not establish
-     the TARGET itself.
-
-9. Pay careful attention to:
+4. Pay careful attention to:
+   - anatomical location,
+   - structural involvement,
    - negation,
    - uncertainty,
-   - severity and grade,
-   - anatomical location,
-   - the distinction between related but different abnormalities,
-   - conflicts between Findings and Impression.
+   - acute versus degenerative findings,
+   - traumatic versus non-traumatic findings,
+   - Findings versus Impression/Conclusion.
 
-10. If Findings and Impression differ, interpret the report as a whole.
-    Prefer the more definitive diagnostic conclusion when supported by the report,
-    but do not ignore explicit contradictory evidence.
+5. Do not classify by isolated keywords.
+   Interpret the complete statement in which a finding appears.
 
-11. Do not use findings from other targets as evidence for the current TARGET unless
-    they directly support the diagnosis of the current TARGET.
+6. When a report explicitly states that the target structure is normal,
+   intact, preserved, or without tear, this is strong negative evidence
+   unless another part of the report clearly provides stronger contradictory
+   evidence.
+
+7. When the Findings and Impression differ, interpret the report as a whole.
+   A definitive Impression or Conclusion should receive substantial weight,
+   but explicit contradictory structural findings must not be ignored.
+
+8. Do not apply one universal severity threshold to all targets.
+   Different targets have different diagnostic boundaries.
+   Follow the TARGET GUIDANCE for the current target.
+
+9. Findings belonging to another target must not be transferred to the
+   current target unless the TARGET GUIDANCE specifically indicates that
+   they are valid supporting evidence.
 
 TASK:
 
-Determine whether the RADIOLOGY REPORT provides sufficiently definite and
-clinically meaningful evidence for the TARGET.
-
-Use the MEDICAL GUIDANCE to interpret the report, but do not apply rigid
-keyword-based rules.
+Determine whether the RADIOLOGY REPORT provides sufficient evidence for
+the TARGET according to the TARGET GUIDANCE.
 
 Return exactly one JSON object:
 

@@ -21,9 +21,3 @@ A visible fracture line, cortical interruption, characteristic subchondral insuf
 
 ## Soft-tissue contusion
 “Contusion” can also refer to muscle or soft-tissue injury. Preserve explicit report wording rather than silently converting a soft-tissue contusion into bone bruise.
-
-## Sources
-1. Andriolo L, et al. *A nosographic and etiopathogenetic framework for subchondral bone marrow lesions in the knee: A narrative review.* 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC11736153/
-2. *Conservative treatments of bone marrow lesions.* 2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC11970530/
-3. Villari E, et al. *Bone marrow edema of the knee: a narrative review.* 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11093815/
-4. Sohn S, et al. *Bone Bruises and Concomitant Meniscus and Cartilage Damage in ACL Injuries: A Systematic Review and Meta-Analysis.* 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11118087/

@@ -20,8 +20,3 @@ A Baker's cyst is synovial-fluid distension of the gastrocnemius-semimembranosus
 
 ## Terminology
 Baker's cyst, Baker cyst, popliteal cyst, popliteal synovial cyst, gastrocnemius-semimembranosus bursal distension.
-
-## Sources
-1. *Comprehensive analysis of knee cysts: diagnosis and treatment.* 2025. PMCID: PMC12080045. https://pmc.ncbi.nlm.nih.gov/articles/PMC12080045/
-2. *Ruptured Baker’s Cyst Demystified: Current Evidence, Diagnostic Strategies, and Treatment Options.* 2025/2026. https://pmc.ncbi.nlm.nih.gov/articles/PMC12810733/
-3. Kim JM, Kang S, Yoon JS. *Association of complicated Baker’s cysts with knee pathologies as compared to simple Baker’s cysts.* Medicine. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11155598/

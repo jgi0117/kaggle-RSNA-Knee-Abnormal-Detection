@@ -22,8 +22,3 @@ ACL injury spans sprain, partial-thickness tear, and complete tear/rupture. MRI 
 
 ## Reporting language useful to an LLM
 Distinguish among: intact/normal ACL, sprain, partial-thickness tear, complete tear/rupture, chronic tear, mucoid degeneration, and indeterminate visualization.
-
-## Sources
-1. Parkar AP, Adriaensen MEAPM. *ESR essentials: MRI of the knee—practice recommendations by ESSR.* European Radiology. 2024;34:6590–6599. DOI: 10.1007/s00330-024-10706-7. https://pmc.ncbi.nlm.nih.gov/articles/PMC11399221/
-2. *Magnetic Resonance Imaging of Anterior Cruciate Ligament Injury.* 2024. PMCID: PMC11463185; PMID: 39385973. https://pmc.ncbi.nlm.nih.gov/articles/PMC11463185/
-3. American College of Radiology. *ACR–SPR–SSR Practice Parameter for the Performance and Interpretation of MRI of the Knee.* Revised 2025. https://gravitas.acr.org/PPTS/GetDocumentView?docId=90

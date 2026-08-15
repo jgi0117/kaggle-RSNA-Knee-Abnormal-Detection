@@ -21,9 +21,3 @@ The MCL complex includes superficial and deep components and resists valgus and 
 
 ## Reporting language useful to an LLM
 Distinguish among intact/normal MCL, low-grade sprain, partial tear, complete tear/disruption, avulsion, and chronic thickening/scarring.
-
-## Sources
-1. Parkar AP, Adriaensen MEAPM. ESSR knee MRI practice recommendations. 2024. https://pmc.ncbi.nlm.nih.gov/articles/PMC11399221/
-2. *Current trends in the medial side of the knee: not only medial collateral ligament (MCL).* 2024/2025. https://pmc.ncbi.nlm.nih.gov/articles/PMC11662134/
-3. *Imaging of the medial collateral ligament of the knee: a systematic review.* 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9596543/
-4. American College of Radiology. ACR–SPR–SSR MRI of the Knee Practice Parameter. Revised 2025. https://gravitas.acr.org/PPTS/GetDocumentView?docId=90
