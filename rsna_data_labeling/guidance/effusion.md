@@ -12,7 +12,8 @@ Effusion represents a definite abnormal accumulation of intra-articular knee joi
 - moderate, large, or massive joint effusion;
 - effusion emphasized in the Impression or Conclusion.
 
-A definite mild or small effusion may still represent true effusion when the radiologist clearly treats it as an abnormal finding.
+Trace/minimal/small/mild effusion alone should not be sufficient.
+Give stronger weight to moderate/large effusion or effusion emphasized as a significant abnormal finding.
 
 ## Findings that require caution
 Do not classify as positive solely for:
