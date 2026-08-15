@@ -1,22 +1,35 @@
 # Lateral Meniscus
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+The Lateral Meniscus target represents a true tear or clinically meaningful structural disruption of the lateral meniscus.
 
-## Clinical/radiologic concept
-MRI is the principal modality for meniscal assessment. A simple meniscal tear is classically represented by abnormal intrameniscal signal extending to an articular surface. Morphologic distortion, substance loss, displaced fragments, extrusion, and root abnormalities can also establish important meniscal pathology.
-
-## MRI patterns supporting a meniscal tear
-- Linear or complex abnormal signal reaching a meniscal articular surface.
-- Radial, horizontal, longitudinal/vertical, flap, bucket-handle, complex, and root tears.
-- Morphologic truncation, missing meniscal tissue, displaced fragment, or abnormal contour attributable to tearing.
-- Extrusion or maceration may accompany degenerative structural damage.
+## Strong positive evidence
+- definite lateral meniscal tear;
+- radial tear;
+- horizontal or vertical surfacing tear;
+- complex tear;
+- bucket-handle tear;
+- root tear;
+- displaced meniscal fragment;
+- meniscocapsular tear clearly involving the lateral meniscus;
+- maceration associated with a definite tear;
+- recurrent tear after prior surgery when explicitly diagnosed.
 
 ## Findings that require caution
-- Intrasubstance signal not reaching an articular surface may represent degeneration rather than definite surface tear.
-- Root tears can be subtle and MRI cannot fully exclude them.
-- Small tears may be difficult to characterize for stability.
-- Postoperative menisci require different interpretive criteria.
+Do not automatically classify as positive for:
+- grade I or grade II degeneration;
+- intrasubstance signal;
+- mucoid degeneration;
+- signal change that does not reach an articular surface;
+- extrusion without definite tear;
+- postoperative truncation or partial meniscectomy appearance alone;
+- irregular morphology without an explicit or structurally convincing tear.
 
-## Lateral-meniscus emphasis
-Only abnormalities of the lateral meniscus should contribute. Lateral tears can be underdetected, particularly subtle radial/root tears and displaced fragments. Localize anterior horn, body, posterior horn, and root; note extrusion, maceration, displaced flap, and definite versus suspected language.
+## Strong negative evidence
+- lateral meniscus intact;
+- normal morphology and signal;
+- no lateral meniscal tear;
+- degeneration without surfacing tear.
+
+## Anatomical precision
+Do not use medial meniscal abnormalities as evidence for this target.

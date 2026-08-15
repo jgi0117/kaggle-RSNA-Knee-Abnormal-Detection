@@ -1,18 +1,33 @@
-# Patellofemoral Osteoarthritis / Degenerative Disease
+# PF OA
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+PF OA represents degenerative chondral or osteoarthritic abnormality of the patellofemoral compartment, including the patellar articular cartilage and femoral trochlea.
 
-## Clinical/radiologic concept
-Patellofemoral degenerative disease concerns the patellar and femoral trochlear articular surfaces. MRI-based research definitions emphasize structural cartilage loss together with osteophyte formation rather than isolated mild signal change.
+Patellofemoral chondropathy may constitute relevant positive evidence even when the report does not explicitly use the word osteoarthritis.
 
-## Relevant structural findings
-- Partial- or full-thickness cartilage loss involving patella and/or trochlea.
-- Definite patellofemoral osteophytes.
-- Patellar or trochlear subchondral change accompanying cartilage damage.
-- Morphologically definite chondral thinning/fissuring should be localized and graded by depth when possible.
+## Strong positive evidence
+- explicitly diagnosed patellofemoral osteoarthritis;
+- patellar chondropathy or chondrosis;
+- trochlear chondropathy or chondrosis;
+- meaningful patellar or trochlear cartilage thinning, fissuring, ulceration, or cartilage loss;
+- high-grade focal cartilage loss of the patella or trochlea;
+- tricompartmental osteoarthritis involving the patellofemoral compartment.
 
 ## Findings that require caution
-- Mild isolated cartilage heterogeneity is less specific than morphologic cartilage loss.
-- Tibiofemoral OA does not by itself establish patellofemoral disease.
-- Synovitis, effusion, or bone marrow edema-like signal are supportive/nonspecific rather than defining in isolation.
+Do not classify as PF OA merely because of:
+- patellar maltracking without cartilage abnormality;
+- patella alta;
+- trochlear dysplasia alone;
+- Hoffa fat-pad edema;
+- patellar tendon disease;
+- MPFL injury;
+- retinacular injury;
+- isolated bone contusion.
+
+## Strong negative evidence
+- normal patellar and trochlear cartilage;
+- no patellofemoral chondral lesion;
+- degenerative disease restricted to medial or lateral tibiofemoral compartments.
+
+## Anatomical rule
+The patella and femoral trochlea define the patellofemoral compartment. Do not confuse lateral trochlear cartilage disease with lateral tibiofemoral OA.

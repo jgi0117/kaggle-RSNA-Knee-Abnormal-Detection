@@ -1,23 +1,34 @@
-# MCL — Medial Collateral Ligament
+# MCL
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+The MCL target represents a meaningful structural injury of the medial collateral ligament.
 
-## Clinical/radiologic concept
-The MCL complex includes superficial and deep components and resists valgus and rotational stress. MRI is sensitive for structural abnormality, but imaging grade does not always equal clinical instability.
-
-## MRI spectrum of MCL injury
-- Low-grade injury may show periligamentous edema while ligament fibers remain structurally intact.
-- Partial tear shows abnormal intrasubstance signal and partial fiber disruption/thickening.
-- Complete tear shows full-thickness disruption or discontinuity.
-- Site of injury should be localized when possible: femoral attachment, midsubstance, or tibial attachment.
-- Associated medial soft-tissue edema and injury to adjacent posteromedial structures can coexist.
+## Strong positive evidence
+- definite partial tear;
+- high-grade partial tear;
+- complete tear or rupture;
+- discontinuity of MCL fibers;
+- substantial structural disruption of superficial or deep MCL components;
+- clearly diagnosed MCL injury with convincing morphological abnormality.
 
 ## Findings that require caution
-- Periligamentous edema without definite fiber disruption can occur in low-grade injury.
-- MRI can overestimate clinically relevant severity and can also underestimate functional instability.
-- Signal abnormality and edema should not automatically be equated with complete structural failure.
-- Exact lesion location and functional instability cannot always be determined from MRI alone.
+Do not automatically classify MCL as positive for:
+- isolated periligamentous edema;
+- mild MCL thickening;
+- increased signal without disruption;
+- low-grade sprain with preserved fibers;
+- minor reactive soft-tissue edema adjacent to the MCL.
 
-## Reporting language useful to an LLM
-Distinguish among intact/normal MCL, low-grade sprain, partial tear, complete tear/disruption, avulsion, and chronic thickening/scarring.
+Interpret the described morphology rather than relying only on the word sprain or its grade.
+
+## Strong negative evidence
+- MCL normal;
+- MCL intact;
+- preserved MCL fibers;
+- no tear;
+- normal collateral ligaments.
+
+When edema is present but the ligament is explicitly intact, do not infer a structural MCL tear without additional convincing evidence.
+
+## Anatomical scope
+Evaluate the medial collateral ligament itself. Do not classify the medial retinaculum, posterior oblique ligament, medial meniscus, or surrounding soft tissues as MCL injury unless the MCL is also involved.

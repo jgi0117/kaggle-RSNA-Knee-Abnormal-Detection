@@ -1,24 +1,38 @@
-# ACL — Anterior Cruciate Ligament
+# ACL
 
-## Scope and use
-This guidance is a literature-derived summary for interpreting radiology-report language. It is not a competition-specific rule set and was not derived from the 58 labeled reports. The patient report remains the evidence source; this document supplies clinical/radiologic interpretation context.
+## Target definition
+The ACL target represents a meaningful structural injury of the anterior cruciate ligament.
 
-## Clinical/radiologic concept
-ACL injury spans sprain, partial-thickness tear, and complete tear/rupture. MRI assessment should focus on morphology, continuity, signal, orientation, and tension of ACL fibers; secondary signs can increase confidence when direct visualization is limited.
+## Strong positive evidence
+- complete ACL tear or rupture;
+- near-complete tear;
+- definite partial-thickness tear with structural fiber disruption;
+- discontinuity or loss of normal ligament continuity attributed to injury;
+- abnormal ACL morphology together with laxity or other convincing structural disruption;
+- ACL avulsion injury when the report indicates resulting ACL disruption.
 
-## MRI findings supporting ACL tear
-- Discontinuity or nonvisualization of ACL fibers.
-- Abnormal fiber orientation, lax/wavy fibers, or loss of the expected taut course.
-- Markedly increased intrasubstance signal on fluid-sensitive sequences in the setting of disrupted fibers.
-- Complete tear is characterized by complete fiber disruption/noncontinuity.
-- Partial tear may show abnormal signal and partial fiber discontinuity with some fibers remaining intact.
-- Secondary findings can include anterior tibial translation, characteristic lateral-compartment impaction/bone-bruising patterns, and associated internal derangement.
+A definite tear in the Impression or Conclusion should receive substantial weight.
 
 ## Findings that require caution
-- Increased ACL signal alone is not synonymous with a tear.
-- Mucoid degeneration can produce increased signal and thickening while fibers remain continuous.
-- Chronic injury may lack acute edema and can instead appear attenuated, scarred, lax, or abnormally oriented.
-- Secondary signs should support, not replace, direct ligament assessment when the ACL can be evaluated.
+Do not automatically classify ACL as positive for:
+- isolated increased or heterogeneous ACL signal;
+- interstitial signal abnormality without convincing fiber disruption;
+- mucoid degeneration;
+- cystic or degenerative ACL change;
+- mild sprain;
+- low-grade injury without structural discontinuity;
+- edema around an otherwise intact ACL.
 
-## Reporting language useful to an LLM
-Distinguish among: intact/normal ACL, sprain, partial-thickness tear, complete tear/rupture, chronic tear, mucoid degeneration, and indeterminate visualization.
+Grade terminology alone should not determine the label. Determine whether a genuine structural ACL injury is actually described.
+
+## Strong negative evidence
+- ACL intact;
+- ACL normal;
+- preserved continuity;
+- normal contour and signal;
+- no ACL tear.
+
+If mild signal change is described but the ligament remains structurally intact, favor the structural description.
+
+## Important distinction
+Bone contusion, tibial translation, joint effusion, or other ligament injuries may accompany ACL injury but do not independently establish the ACL target.

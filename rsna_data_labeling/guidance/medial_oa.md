@@ -1,22 +1,33 @@
-# Medial Tibiofemoral Osteoarthritis / Degenerative Disease
+# Medial OA
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+Medial OA represents degenerative osteoarthritic or chondral disease of the medial tibiofemoral compartment.
 
-## Clinical/radiologic concept
-Knee osteoarthritis is a whole-joint degenerative process. MRI can demonstrate cartilage loss, osteophytes, bone marrow lesions, subchondral change, meniscal damage/extrusion, and synovial abnormalities. Recent MRI-based OA definitions emphasize combinations of structural abnormalities rather than isolated mild signal changes.
+The target should reflect a degenerative compartment-level process rather than every isolated cartilage abnormality.
 
-## Structural findings relevant to OA
-- Partial- or full-thickness cartilage loss, with depth and location specified.
-- Definite osteophytes.
-- Subchondral bone marrow lesions/cysts or attrition as supportive features.
-- Meniscal maceration, extrusion, or degenerative tear as supportive tibiofemoral features.
-- Synovitis/effusion may accompany OA but are nonspecific by themselves.
+## Strong positive evidence
+- explicitly diagnosed medial compartment osteoarthritis;
+- medial tibiofemoral osteoarthritis;
+- convincing degenerative cartilage loss in the medial femoral condyle and/or medial tibial plateau;
+- substantial medial compartment chondrosis with osteophytes, subchondral cystic change, sclerosis, or chronic degenerative remodeling;
+- tricompartmental osteoarthritis that includes the medial compartment.
 
 ## Findings that require caution
-- Mild isolated cartilage signal heterogeneity is less specific than definite morphologic cartilage loss.
-- Bone marrow edema-like signal is nonspecific.
-- ESSR recommends describing observed structural pathology rather than using MRI alone to make an unqualified clinical diagnosis of osteoarthritis.
+Do not automatically classify as medial OA for:
+- an isolated focal chondral ulcer;
+- an isolated traumatic osteochondral defect;
+- focal cartilage fissuring without broader degenerative change;
+- marrow edema due primarily to trauma, fracture, or contusion;
+- meniscal tear alone;
+- cartilage abnormalities located only in the lateral or patellofemoral compartments.
 
-## Compartment-specific interpretation
-Only medial tibiofemoral degeneration should contribute: medial femoral condyle, medial tibial plateau, medial marginal osteophytes, related subchondral change, and associated medial meniscal degenerative pathology. Do not transfer lateral or patellofemoral abnormalities.
+The presence of cartilage damage does not always imply osteoarthritis.
+
+## Strong negative evidence
+- preserved medial compartment cartilage;
+- normal medial tibiofemoral compartment;
+- no medial degenerative change;
+- cartilage abnormality confined to another compartment.
+
+## Compartment rule
+Only medial tibiofemoral degenerative findings count.

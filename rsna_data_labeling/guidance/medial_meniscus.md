@@ -1,22 +1,37 @@
 # Medial Meniscus
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+The Medial Meniscus target represents a true tear or clinically meaningful structural disruption of the medial meniscus.
 
-## Clinical/radiologic concept
-MRI is the principal modality for meniscal assessment. A simple meniscal tear is classically represented by abnormal intrameniscal signal extending to an articular surface. Morphologic distortion, substance loss, displaced fragments, extrusion, and root abnormalities can also establish important meniscal pathology.
-
-## MRI patterns supporting a meniscal tear
-- Linear or complex abnormal signal reaching a meniscal articular surface.
-- Radial, horizontal, longitudinal/vertical, flap, bucket-handle, complex, and root tears.
-- Morphologic truncation, missing meniscal tissue, displaced fragment, or abnormal contour attributable to tearing.
-- Extrusion or maceration may accompany degenerative structural damage.
+## Strong positive evidence
+- definite medial meniscal tear;
+- radial tear;
+- horizontal or vertical tear reaching an articular surface;
+- complex tear;
+- bucket-handle tear;
+- root tear;
+- displaced meniscal fragment;
+- meniscocapsular tear when clearly diagnosed;
+- maceration associated with a true tear;
+- recurrent tear after prior surgery when explicitly diagnosed.
 
 ## Findings that require caution
-- Intrasubstance signal not reaching an articular surface may represent degeneration rather than definite surface tear.
-- Root tears can be subtle and MRI cannot fully exclude them.
-- Small tears may be difficult to characterize for stability.
-- Postoperative menisci require different interpretive criteria.
+Do not automatically classify as positive for:
+- grade I or grade II intrameniscal signal;
+- mucoid or degenerative change;
+- intrasubstance degeneration;
+- increased signal that does not reach an articular surface;
+- meniscal extrusion without evidence of tear;
+- postoperative truncation or altered morphology without a definite recurrent tear;
+- suspected tear when the report ultimately favors degeneration.
 
-## Medial-meniscus emphasis
-Only abnormalities of the medial meniscus should contribute. Localize anterior horn, body, posterior horn, and root; note extrusion, maceration, displaced flap, and definite versus suspected language.
+Surface communication and structural disruption are stronger evidence than signal abnormality alone.
+
+## Strong negative evidence
+- medial meniscus intact;
+- normal morphology and signal;
+- no medial meniscal tear;
+- degeneration explicitly stated without surfacing tear.
+
+## Anatomical precision
+Do not transfer evidence from the lateral meniscus to the medial meniscus.

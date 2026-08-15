@@ -1,18 +1,39 @@
-# Knee Synovitis
+# Synovitis
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+Synovitis represents inflammation or abnormal proliferation of the knee synovium.
 
-## Clinical/radiologic concept
-Synovitis refers to abnormal synovial membrane thickening/remodeling and, depending on technique, may also be associated with increased vascularity or enhancement. In OA imaging research, definitions vary and there is no single universally accepted imaging definition.
+## Strong positive evidence
+- explicit diagnosis of synovitis;
+- synovial hypertrophy;
+- synovial thickening;
+- thickened or proliferative synovial tissue;
+- inflamed synovium;
+- chronic reactive synovitis;
+- effusion specifically described together with synovial hypertrophy, thickening, or inflammatory change.
 
-## MRI findings relevant to synovitis
-- Synovial thickening is a central morphologic feature.
-- Contrast-enhanced MRI can distinguish enhancing synovium from nonenhancing joint fluid more directly than conventional non-contrast MRI.
-- On conventional fluid-sensitive MRI, synovium and effusion can be difficult to separate; “effusion-synovitis” is therefore common.
-- Hoffa-synovitis is an indirect marker based on diffuse signal alteration in the infrapatellar fat pad.
+## Supporting but not independently definitive evidence
+The following may support synovitis in a consistent inflammatory joint context:
+- substantial joint effusion or hydrops;
+- synovial plicae with synovial hypertrophy;
+- inflammatory change of the joint lining;
+- recurrent or chronic inflammatory joint fluid.
 
-## Findings that require caution
-- Joint effusion alone does not prove synovitis.
-- Synovial thickening does not always mean active inflammation; remodeling and inflammatory changes can coexist.
-- Bursitis, plica, or fat-pad edema should not automatically be converted into synovitis unless the report links them to synovial inflammation/thickening.
+These findings should not automatically create a positive label without a reasonable synovial interpretation.
+
+## Findings that are insufficient alone
+Do not classify as synovitis solely because of:
+- simple joint effusion;
+- hemarthrosis after trauma;
+- bursitis;
+- Hoffa fat-pad edema;
+- subcutaneous edema;
+- osteoarthritis without inflammatory synovial findings.
+
+## Strong negative evidence
+- explicitly normal synovium;
+- absence of synovial thickening or inflammation when specifically assessed;
+- isolated non-inflammatory joint fluid without synovial abnormality.
+
+## Important distinction
+Effusion and synovitis are related but separate targets. Effusion alone is not synonymous with synovitis.

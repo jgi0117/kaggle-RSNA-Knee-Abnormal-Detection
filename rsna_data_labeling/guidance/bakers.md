@@ -1,22 +1,31 @@
-# Baker's Cyst / Popliteal Cyst
+# Baker's
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+The Baker's target represents a Baker cyst, also called a popliteal cyst, arising in the characteristic posteromedial knee region.
 
-## Clinical/radiologic concept
-A Baker's cyst is synovial-fluid distension of the gastrocnemius-semimembranosus bursa, typically in the posteromedial knee and often communicating with the knee joint through a posterior capsular opening.
+## Strong positive evidence
+- Baker cyst;
+- Baker's cyst;
+- popliteal cyst when the report clearly refers to a Baker-type cyst;
+- gastrocnemius-semimembranosus bursal cyst consistent with a Baker cyst;
+- ruptured or leaking Baker cyst;
+- residual Baker cyst after partial rupture.
 
-## MRI/report findings relevant to Baker's cyst
-- Fluid-containing cystic structure in the characteristic gastrocnemius-semimembranosus location.
-- Communication with the knee joint may be visible or described.
-- May be simple or complicated by debris, synovial thickening, hemorrhage, or rupture.
-- Rupture can produce fluid tracking into adjacent calf/soft tissues.
-- Frequently associated with OA, meniscal tears, and synovitis/effusion.
+The cyst may be small, moderate, or large. Size alone does not determine whether it is present.
 
 ## Findings that require caution
-- Not every posterior knee cyst is a Baker's cyst.
-- Meniscal cysts, ganglion cysts, other bursae, vascular lesions, and masses have different origins.
-- Popliteal fluid without the characteristic anatomy should not automatically be called a Baker's cyst.
+Do not classify as positive for:
+- generic posterior knee fluid;
+- ganglion cyst;
+- parameniscal cyst;
+- bursitis at another anatomical site;
+- vascular abnormality;
+- popliteal edema without a cyst.
 
-## Terminology
-Baker's cyst, Baker cyst, popliteal cyst, popliteal synovial cyst, gastrocnemius-semimembranosus bursal distension.
+## Strong negative evidence
+- no Baker cyst;
+- no popliteal cyst;
+- absence of a pathological popliteal cyst when specifically assessed.
+
+## Anatomical distinction
+A cyst near the popliteal region should only count when the report identifies it as a Baker/popliteal cyst or describes anatomy clearly compatible with one.

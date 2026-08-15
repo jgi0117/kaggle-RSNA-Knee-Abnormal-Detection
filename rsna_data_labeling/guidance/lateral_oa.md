@@ -1,22 +1,31 @@
-# Lateral Tibiofemoral Osteoarthritis / Degenerative Disease
+# Lateral OA
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+Lateral OA represents degenerative osteoarthritic or chondral disease of the lateral tibiofemoral compartment.
 
-## Clinical/radiologic concept
-Knee osteoarthritis is a whole-joint degenerative process. MRI can demonstrate cartilage loss, osteophytes, bone marrow lesions, subchondral change, meniscal damage/extrusion, and synovial abnormalities. Recent MRI-based OA definitions emphasize combinations of structural abnormalities rather than isolated mild signal changes.
-
-## Structural findings relevant to OA
-- Partial- or full-thickness cartilage loss, with depth and location specified.
-- Definite osteophytes.
-- Subchondral bone marrow lesions/cysts or attrition as supportive features.
-- Meniscal maceration, extrusion, or degenerative tear as supportive tibiofemoral features.
-- Synovitis/effusion may accompany OA but are nonspecific by themselves.
+## Strong positive evidence
+- explicitly diagnosed lateral compartment osteoarthritis;
+- lateral tibiofemoral osteoarthritis;
+- convincing degenerative cartilage loss involving the lateral femoral condyle and/or lateral tibial plateau;
+- substantial lateral compartment chondrosis with osteophytes, subchondral cysts, sclerosis, or chronic remodeling;
+- tricompartmental osteoarthritis involving the lateral compartment.
 
 ## Findings that require caution
-- Mild isolated cartilage signal heterogeneity is less specific than definite morphologic cartilage loss.
-- Bone marrow edema-like signal is nonspecific.
-- ESSR recommends describing observed structural pathology rather than using MRI alone to make an unqualified clinical diagnosis of osteoarthritis.
+Do not automatically classify as positive for:
+- isolated focal chondral defect;
+- acute osteochondral injury;
+- focal traumatic cartilage loss;
+- marrow edema caused by fracture or contusion;
+- a lateral meniscus tear by itself;
+- isolated patellar or trochlear chondrosis.
 
-## Compartment-specific interpretation
-Only lateral tibiofemoral degeneration should contribute: lateral femoral condyle, lateral tibial plateau, lateral marginal osteophytes, related subchondral change, and associated lateral meniscal degenerative pathology. Do not transfer medial or patellofemoral abnormalities.
+High-grade focal cartilage injury can still be a focal lesion rather than compartmental osteoarthritis.
+
+## Strong negative evidence
+- preserved lateral compartment cartilage;
+- normal lateral tibiofemoral compartment;
+- no degenerative lateral compartment abnormality;
+- disease limited to the medial or patellofemoral compartment.
+
+## Compartment rule
+Only lateral tibiofemoral degenerative abnormalities count.

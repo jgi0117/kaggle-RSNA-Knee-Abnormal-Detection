@@ -1,23 +1,37 @@
-# Contusion / Traumatic Bone Marrow Lesion
+# Contusion
 
-## Scope and use
-Literature-derived guidance only; not derived from competition labels.
+## Target definition
+Contusion represents traumatic bone or soft-tissue contusion, especially a bone bruise or contusional bone-marrow injury.
 
-## Clinical/radiologic concept
-A traumatic bone contusion (bone bruise) is a trauma-related bone marrow lesion without the defining fracture morphology of a frank fracture. MRI is highly sensitive to the marrow signal change.
+Bone marrow edema has many causes and is not automatically a contusion.
 
-## MRI findings relevant to traumatic bone contusion
-- High signal on fluid-sensitive sequences such as fat-suppressed T2/PD or STIR.
-- Often low or intermediate signal on T1-weighted images.
-- Distribution should be compatible with a traumatic mechanism.
-- Shear, impaction, and avulsion mechanisms can produce characteristic spatial patterns.
-- In ACL injury, bruising commonly involves the lateral femoral condyle and posterolateral tibial plateau.
+## Strong positive evidence
+- explicit bone contusion;
+- bone bruise;
+- contusional bone marrow edema;
+- kissing contusions;
+- traumatic marrow edema explicitly interpreted as a contusion;
+- definite muscle contusion when the report explicitly diagnoses traumatic contusion.
 
-## Differential considerations
-Bone marrow edema-like signal is nonspecific and can occur with OA, stress/fatigue injury, subchondral insufficiency fracture, osteonecrosis, inflammatory/reactive processes, and postoperative change.
+## Findings that require caution
+Do not automatically classify as contusion for generic bone marrow edema.
+
+Marrow edema can instead be secondary to:
+- osteoarthritis;
+- cartilage loss;
+- insufficiency fracture;
+- osteochondral fracture;
+- subchondral fracture;
+- stress injury;
+- degenerative subchondral change.
+
+When the report provides a specific non-contusional cause for the edema, prefer that explanation.
+
+## Strong negative evidence
+- no bone bruise;
+- no bone contusion;
+- normal marrow signal;
+- edema explained entirely by degenerative or fracture-related pathology without an independent traumatic contusion.
 
 ## Fracture distinction
-A visible fracture line, cortical interruption, characteristic subchondral insufficiency-fracture line, or osteochondral fracture should be treated as fracture-related pathology rather than uncomplicated bone bruise alone.
-
-## Soft-tissue contusion
-“Contusion” can also refer to muscle or soft-tissue injury. Preserve explicit report wording rather than silently converting a soft-tissue contusion into bone bruise.
+Contusion and fracture are separate targets. A fracture with surrounding marrow edema does not automatically imply a separate contusion. Conversely, a bone bruise without a fracture can still support Contusion = 1.
