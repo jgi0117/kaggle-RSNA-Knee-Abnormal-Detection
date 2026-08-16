@@ -31,76 +31,28 @@ def build_target_prompt(
     guidance: str,
 ) -> str:
     return f"""
-You are classifying a knee MRI radiology report for one predefined target.
-
-The same radiology report is evaluated independently for 12 different targets.
-For this call, evaluate ONLY the TARGET below.
-
-The TARGET GUIDANCE defines what evidence should and should not count for
-this specific target. Apply it carefully.
+Classify the knee MRI report for ONLY the target below.
 
 TARGET:
 {target}
 
-TARGET GUIDANCE:
+GUIDANCE:
 {guidance}
 
-RADIOLOGY REPORT:
+REPORT:
 {report}
 
-GENERAL RULES:
-
-1. Use only the RADIOLOGY REPORT as patient-specific evidence.
-
-2. The TARGET GUIDANCE defines the interpretation boundary for this target.
-   Do not treat examples or medical knowledge in the guidance as evidence
-   that the patient has the abnormality.
-
-3. Evaluate the exact target, not merely a related abnormality.
-   A nearby anatomical finding or clinically associated condition is not
-   automatically evidence for the target.
-
-4. Pay careful attention to:
-   - anatomical location,
-   - structural involvement,
-   - negation,
-   - uncertainty,
-   - acute versus degenerative findings,
-   - traumatic versus non-traumatic findings,
-   - Findings versus Impression/Conclusion.
-
-5. Do not classify by isolated keywords.
-   Interpret the complete statement in which a finding appears.
-
-6. When a report explicitly states that the target structure is normal,
-   intact, preserved, or without tear, this is strong negative evidence
-   unless another part of the report clearly provides stronger contradictory
-   evidence.
-
-7. When the Findings and Impression differ, interpret the report as a whole.
-   A definitive Impression or Conclusion should receive substantial weight,
-   but explicit contradictory structural findings must not be ignored.
-
-8. Do not apply one universal severity threshold to all targets.
-   Different targets have different diagnostic boundaries.
-   Follow the TARGET GUIDANCE for the current target.
-
-9. Findings belonging to another target must not be transferred to the
-   current target unless the TARGET GUIDANCE specifically indicates that
-   they are valid supporting evidence.
-
-TASK:
-
-Determine whether the RADIOLOGY REPORT provides sufficient evidence for
-the TARGET according to the TARGET GUIDANCE.
+RULES:
+- Use only the REPORT as patient-specific evidence.
+- Follow the target-specific GUIDANCE.
+- Respect anatomy, negation, uncertainty, and explicit normal findings.
+- Do not infer the target from related abnormalities alone.
+- When Findings and Impression conflict, judge the report as a whole.
 
 Return exactly one JSON object:
-
 {{"target": "{target}", "label": 0}}
-
 or
-
 {{"target": "{target}", "label": 1}}
 
-Do not provide explanations or additional text.
+No explanation.
 """.strip()
