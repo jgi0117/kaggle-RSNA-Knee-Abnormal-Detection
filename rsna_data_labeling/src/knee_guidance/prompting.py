@@ -1,6 +1,4 @@
-def build_translation_prompt(
-    report: str,
-) -> str:
+def build_translation_prompt(report: str) -> str:
     return f"""
 You are translating a knee MRI radiology report into English.
 
@@ -25,11 +23,7 @@ RADIOLOGY REPORT:
 """.strip()
 
 
-def build_target_prompt(
-    report: str,
-    target: str,
-    guidance: str,
-) -> str:
+def build_target_prompt(report: str, target: str, guidance: str) -> str:
     return f"""
 Classify the knee MRI report for ONLY the target below.
 
@@ -49,14 +43,6 @@ RULES:
 - Do not infer the target from related abnormalities alone.
 - When Findings and Impression conflict, judge the report as a whole.
 
-Do not provide reasoning, analysis, or explanation.
-Make the decision internally and return only the final JSON object.
-
-Return exactly one of:
-
-{{"target": "{target}", "label": 0}}
-
-or
-
-{{"target": "{target}", "label": 1}}
+Choose the correct binary label for the TARGET.
+The output format is constrained by the caller.
 """.strip()
