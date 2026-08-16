@@ -2,56 +2,29 @@ from tqdm.auto import tqdm
 
 from .constants import LABEL_COLS
 from .guidance import GuidanceStore
-from .llm import QwenTargetClassifier
-from .prompting import (
-    build_target_prompt,
-    build_translation_prompt,
-)
+from .llm import MedGemmaTargetClassifier
+from .prompting import build_target_prompt
 
 
 class KneeGuidanceClassifier:
     def __init__(
         self,
         guidance_dir,
-        model_name="Qwen/Qwen3-8B",
+        model_name="google/medgemma-1.5-4b-it",
     ):
         self.guidance_store = GuidanceStore(
             guidance_dir
         )
 
-        self.llm = QwenTargetClassifier(
+        self.llm = MedGemmaTargetClassifier(
             model_name=model_name,
         )
 
-    def translate_report(
+    def classify_translated_report(
         self,
-        report: str,
-    ) -> str:
-        translation_prompt = (
-            build_translation_prompt(
-                report=report,
-            )
-        )
-
-        translated_report = (
-            self.llm.translate(
-                prompt=translation_prompt,
-            )
-        )
-
-        return translated_report
-
-    def classify_report(
-        self,
-        report: str,
+        translated_report: str,
         show_progress: bool = False,
     ):
-        translated_report = (
-            self.translate_report(
-                report=report,
-            )
-        )
-
         predictions = {}
         raw_outputs = {}
 
@@ -66,10 +39,8 @@ class KneeGuidanceClassifier:
             )
 
         for target in targets:
-            guidance = (
-                self.guidance_store.get(
-                    target
-                )
+            guidance = self.guidance_store.get(
+                target
             )
 
             prompt = build_target_prompt(
@@ -78,20 +49,18 @@ class KneeGuidanceClassifier:
                 guidance=guidance,
             )
 
-            label, raw_output = (
-                self.llm.predict(
-                    prompt=prompt,
-                    target=target,
-                )
+            label, raw_output = self.llm.predict(
+                prompt=prompt,
+                target=target,
             )
 
             predictions[target] = label
-            raw_outputs[target] = (
-                raw_output
-            )
+            raw_outputs[target] = raw_output
 
         return (
             predictions,
             raw_outputs,
-            translated_report,
         )
+
+    def unload(self):
+        self.llm.unload()
