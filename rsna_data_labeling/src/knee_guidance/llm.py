@@ -293,7 +293,7 @@ class MedGemmaTargetClassifier:
     ):
         raw_output = self._generate(
             prompt=prompt,
-            max_new_tokens=64,
+            max_new_tokens=512,
         )
 
         label = self._parse_label(

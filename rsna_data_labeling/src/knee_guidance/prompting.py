@@ -49,13 +49,14 @@ RULES:
 - Do not infer the target from related abnormalities alone.
 - When Findings and Impression conflict, judge the report as a whole.
 
-Return exactly one JSON object and nothing else.
+Do not provide reasoning, analysis, or explanation.
+Make the decision internally and return only the final JSON object.
 
-For label 0:
+Return exactly one of:
+
 {{"target": "{target}", "label": 0}}
 
-For label 1:
-{{"target": "{target}", "label": 1}}
+or
 
-Now output the JSON result:
+{{"target": "{target}", "label": 1}}
 """.strip()
