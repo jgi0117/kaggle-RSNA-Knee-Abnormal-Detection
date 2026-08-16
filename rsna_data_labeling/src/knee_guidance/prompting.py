@@ -49,10 +49,12 @@ RULES:
 - Do not infer the target from related abnormalities alone.
 - When Findings and Impression conflict, judge the report as a whole.
 
-Return exactly one JSON object:
+Think carefully about the report and the target-specific guidance before deciding.
+
+After reasoning, provide the final answer as exactly one JSON object:
 {{"target": "{target}", "label": 0}}
 or
 {{"target": "{target}", "label": 1}}
 
-No explanation.
+Do not include any text after the final JSON object.
 """.strip()

@@ -70,7 +70,7 @@ class QwenTargetClassifier:
             messages,
             tokenize=False,
             add_generation_prompt=True,
-            enable_thinking=False,
+            enable_thinking=True,
         )
 
         inputs = self.tokenizer(
@@ -89,7 +89,10 @@ class QwenTargetClassifier:
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=max_new_tokens,
-                do_sample=False,
+                do_sample=True,
+                temperature=0.6,
+                top_p=0.95,
+                top_k=50,
                 pad_token_id=self.tokenizer.eos_token_id,
             )
 
@@ -122,7 +125,7 @@ class QwenTargetClassifier:
     ):
         raw_output = self._generate(
             prompt=prompt,
-            max_new_tokens=64,
+            max_new_tokens=4096,
         )
 
         label = self._parse_label(
