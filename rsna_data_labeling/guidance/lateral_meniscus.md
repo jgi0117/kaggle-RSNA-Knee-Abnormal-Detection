@@ -1,35 +1,18 @@
 # Lateral Meniscus
 
-## Target definition
-The Lateral Meniscus target represents a true tear or clinically meaningful structural disruption of the lateral meniscus.
+Label 1 when the report supports a true lateral meniscal tear/disruptive lesion.
 
-## Strong positive evidence
-- definite lateral meniscal tear;
-- radial tear;
-- horizontal or vertical surfacing tear;
-- complex tear;
-- bucket-handle tear;
-- root tear;
-- displaced meniscal fragment;
-- meniscocapsular tear clearly involving the lateral meniscus;
-- maceration associated with a definite tear;
-- recurrent tear after prior surgery when explicitly diagnosed.
+## Positive
+- Explicit lateral meniscus tear.
+- Radial, horizontal, vertical, longitudinal, complex, bucket-handle, flap, root, displaced, recurrent tear.
+- Maceration/amputation/truncation when clearly describing structural loss of lateral meniscal tissue.
+- Meniscocapsular separation or Wrisberg-rip type tear when explicitly described.
+- Definite tear in the final impression/conclusion.
 
-## Findings that require caution
-Do not automatically classify as positive for:
-- grade I or grade II degeneration;
-- intrasubstance signal;
-- mucoid degeneration;
-- signal change that does not reach an articular surface;
-- extrusion without definite tear;
-- postoperative truncation or partial meniscectomy appearance alone;
-- irregular morphology without an explicit or structurally convincing tear.
+## Negative
+- Lateral meniscus normal/intact/no tear.
+- Grade I/II degeneration or intrasubstance signal without a surfacing tear.
+- Extrusion alone without tear.
 
-## Strong negative evidence
-- lateral meniscus intact;
-- normal morphology and signal;
-- no lateral meniscal tear;
-- degeneration without surfacing tear.
-
-## Anatomical precision
-Do not use medial meniscal abnormalities as evidence for this target.
+## Conflict and laterality rule
+Prefer the final impression/conclusion when findings and impression disagree about which meniscus is torn. Structural terms such as amputation/truncation should not be rejected merely because the word "tear" is absent.

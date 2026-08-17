@@ -1,31 +1,20 @@
 # Lateral OA
 
-## Target definition
-Lateral OA represents degenerative osteoarthritic or chondral disease of the lateral tibiofemoral compartment.
+Label 1 for degenerative osteoarthritic/chondral disease of the lateral tibiofemoral compartment.
 
-## Strong positive evidence
-- explicitly diagnosed lateral compartment osteoarthritis;
-- lateral tibiofemoral osteoarthritis;
-- convincing degenerative cartilage loss involving the lateral femoral condyle and/or lateral tibial plateau;
-- substantial lateral compartment chondrosis with osteophytes, subchondral cysts, sclerosis, or chronic remodeling;
-- tricompartmental osteoarthritis involving the lateral compartment.
+## Positive
+- Explicit lateral compartment OA/gonarthrosis.
+- Explicit OA of all three compartments.
+- Moderate/high-grade or full-thickness lateral femoral condyle or lateral tibial plateau cartilage loss.
+- Degenerative lateral cartilage loss with osteophytes, joint-space narrowing, subchondral cysts/sclerosis, or chronic degenerative marrow change.
+- Grade 3-4 lateral tibiofemoral chondropathy/chondromalacia.
 
-## Findings that require caution
-Do not automatically classify as positive for:
-- isolated focal chondral defect;
-- acute osteochondral injury;
-- focal traumatic cartilage loss;
-- marrow edema caused by fracture or contusion;
-- a lateral meniscus tear by itself;
-- isolated patellar or trochlear chondrosis.
+## Negative
+- Lateral tibiofemoral cartilage explicitly intact/normal, unless the final impression explicitly diagnoses lateral OA.
+- Mild/low-grade isolated fissuring or focal defect without a lateral OA diagnosis.
+- Traumatic osteochondral injury/fracture.
+- Lateral meniscus tear alone.
+- Patellar/trochlear disease alone.
 
-High-grade focal cartilage injury can still be a focal lesion rather than compartmental osteoarthritis.
-
-## Strong negative evidence
-- preserved lateral compartment cartilage;
-- normal lateral tibiofemoral compartment;
-- no degenerative lateral compartment abnormality;
-- disease limited to the medial or patellofemoral compartment.
-
-## Compartment rule
-Only lateral tibiofemoral degenerative abnormalities count.
+## Important
+Trochlea belongs to PF OA, not Lateral OA. "Tricompartmental chondrosis" alone should be interpreted with the compartment-specific findings; explicit "OA of all three compartments" is stronger.

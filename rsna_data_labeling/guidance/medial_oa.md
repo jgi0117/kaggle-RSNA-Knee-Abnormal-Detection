@@ -1,33 +1,20 @@
 # Medial OA
 
-## Target definition
-Medial OA represents degenerative osteoarthritic or chondral disease of the medial tibiofemoral compartment.
+Label 1 for degenerative osteoarthritic/chondral disease of the medial tibiofemoral compartment.
 
-The target should reflect a degenerative compartment-level process rather than every isolated cartilage abnormality.
+## Positive
+- Explicit medial compartment OA/gonarthrosis.
+- Explicit OA of all three compartments.
+- Moderate/high-grade or full-thickness medial femoral condyle or medial tibial plateau cartilage loss.
+- Degenerative medial cartilage loss with osteophytes, joint-space narrowing, subchondral cysts/sclerosis, or chronic degenerative marrow change.
+- Grade 3-4 medial tibiofemoral chondropathy/chondromalacia.
 
-## Strong positive evidence
-- explicitly diagnosed medial compartment osteoarthritis;
-- medial tibiofemoral osteoarthritis;
-- convincing degenerative cartilage loss in the medial femoral condyle and/or medial tibial plateau;
-- substantial medial compartment chondrosis with osteophytes, subchondral cystic change, sclerosis, or chronic degenerative remodeling;
-- tricompartmental osteoarthritis that includes the medial compartment.
+## Negative
+- Medial tibiofemoral cartilage explicitly intact/normal, unless the final impression explicitly diagnoses medial OA.
+- Isolated traumatic osteochondral lesion/fracture.
+- Meniscal tear/extrusion or marrow edema alone.
+- Patellar/trochlear disease alone.
+- Mild nonspecific cartilage change without a medial OA/chondrosis diagnosis.
 
-## Findings that require caution
-Do not automatically classify as medial OA for:
-- an isolated focal chondral ulcer;
-- an isolated traumatic osteochondral defect;
-- focal cartilage fissuring without broader degenerative change;
-- marrow edema due primarily to trauma, fracture, or contusion;
-- meniscal tear alone;
-- cartilage abnormalities located only in the lateral or patellofemoral compartments.
-
-The presence of cartilage damage does not always imply osteoarthritis.
-
-## Strong negative evidence
-- preserved medial compartment cartilage;
-- normal medial tibiofemoral compartment;
-- no medial degenerative change;
-- cartilage abnormality confined to another compartment.
-
-## Compartment rule
-Only medial tibiofemoral degenerative findings count.
+## Conflict rule
+An explicit OA diagnosis in the final impression carries more weight than isolated compartment wording in the findings.

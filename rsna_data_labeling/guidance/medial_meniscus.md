@@ -1,37 +1,18 @@
 # Medial Meniscus
 
-## Target definition
-The Medial Meniscus target represents a true tear or clinically meaningful structural disruption of the medial meniscus.
+Label 1 when the report supports a true medial meniscal tear/disruptive lesion.
 
-## Strong positive evidence
-- definite medial meniscal tear;
-- radial tear;
-- horizontal or vertical tear reaching an articular surface;
-- complex tear;
-- bucket-handle tear;
-- root tear;
-- displaced meniscal fragment;
-- meniscocapsular tear when clearly diagnosed;
-- maceration associated with a true tear;
-- recurrent tear after prior surgery when explicitly diagnosed.
+## Positive
+- Explicit medial meniscus tear.
+- Radial, horizontal, vertical, longitudinal, complex, bucket-handle, flap, root, displaced, recurrent tear.
+- Signal reaching an articular surface when interpreted as tear.
+- Ramp lesion / meniscocapsular separation when explicitly interpreted as a tear or lesion.
+- Definite tear in the final impression/conclusion.
 
-## Findings that require caution
-Do not automatically classify as positive for:
-- grade I or grade II intrameniscal signal;
-- mucoid or degenerative change;
-- intrasubstance degeneration;
-- increased signal that does not reach an articular surface;
-- meniscal extrusion without evidence of tear;
-- postoperative truncation or altered morphology without a definite recurrent tear;
-- suspected tear when the report ultimately favors degeneration.
+## Negative
+- Medial meniscus normal/intact/no tear.
+- Grade I/II degeneration, mucoid degeneration, meniscopathy, intrasubstance signal without surface extension.
+- Extrusion alone without tear.
 
-Surface communication and structural disruption are stronger evidence than signal abnormality alone.
-
-## Strong negative evidence
-- medial meniscus intact;
-- normal morphology and signal;
-- no medial meniscal tear;
-- degeneration explicitly stated without surfacing tear.
-
-## Anatomical precision
-Do not transfer evidence from the lateral meniscus to the medial meniscus.
+## Conflict and laterality rule
+If the body text names one side but the final impression names the other side, prioritize the final impression/conclusion for laterality. Do not copy a lateral meniscus tear to the medial target.

@@ -1,31 +1,18 @@
 # Baker's
 
-## Target definition
-The Baker's target represents a Baker cyst, also called a popliteal cyst, arising in the characteristic posteromedial knee region.
+Label 1 when a definite Baker/popliteal cyst is present.
 
-## Strong positive evidence
-- Baker cyst;
-- Baker's cyst;
-- popliteal cyst when the report clearly refers to a Baker-type cyst;
-- gastrocnemius-semimembranosus bursal cyst consistent with a Baker cyst;
-- ruptured or leaking Baker cyst;
-- residual Baker cyst after partial rupture.
+## Positive
+- Explicit Baker cyst.
+- Explicit popliteal cyst clearly used as a Baker-type cyst.
+- Small/moderate/large definite Baker cyst.
+- Leaking or ruptured Baker cyst.
 
-The cyst may be small, moderate, or large. Size alone does not determine whether it is present.
+## Negative
+- No Baker's cyst / no popliteal cyst.
+- Trace or tiny equivocal posterior fluid without a definite cyst diagnosis.
+- Popliteus tendon bursitis or other bursae.
+- Ganglion cysts or nonspecific posterior fluid.
 
-## Findings that require caution
-Do not classify as positive for:
-- generic posterior knee fluid;
-- ganglion cyst;
-- parameniscal cyst;
-- bursitis at another anatomical site;
-- vascular abnormality;
-- popliteal edema without a cyst.
-
-## Strong negative evidence
-- no Baker cyst;
-- no popliteal cyst;
-- absence of a pathological popliteal cyst when specifically assessed.
-
-## Anatomical distinction
-A cyst near the popliteal region should only count when the report identifies it as a Baker/popliteal cyst or describes anatomy clearly compatible with one.
+## Caution
+Do not infer Baker's from location alone. A definite named cyst is required. Very small/trace findings should be treated conservatively unless clearly called a Baker/popliteal cyst.

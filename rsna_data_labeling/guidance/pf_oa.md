@@ -1,33 +1,17 @@
 # PF OA
 
-## Target definition
-PF OA represents degenerative chondral or osteoarthritic abnormality of the patellofemoral compartment, including the patellar articular cartilage and femoral trochlea.
+Label 1 for clinically meaningful degenerative cartilage disease of the patellofemoral compartment (patella + femoral trochlea).
 
-Patellofemoral chondropathy may constitute relevant positive evidence even when the report does not explicitly use the word osteoarthritis.
+## Positive
+- Explicit patellofemoral OA.
+- Explicit OA of all three compartments.
+- Grade 3-4, high-grade, near/full-thickness cartilage loss, ulceration, or chondromalacia of patella or trochlea.
+- Clearly degenerative patellar/trochlear chondropathy with osteophytes or subchondral degenerative change.
 
-## Strong positive evidence
-- explicitly diagnosed patellofemoral osteoarthritis;
-- patellar chondropathy or chondrosis;
-- trochlear chondropathy or chondrosis;
-- meaningful patellar or trochlear cartilage thinning, fissuring, ulceration, or cartilage loss;
-- high-grade focal cartilage loss of the patella or trochlea;
-- tricompartmental osteoarthritis involving the patellofemoral compartment.
+## Negative
+- Patellar/trochlear cartilage normal/intact.
+- Mild or low-grade focal chondrosis/chondromalacia alone without an explicit PF OA diagnosis.
+- Patellar maltracking, MPFL/retinacular injury, Hoffa impingement, or isolated acute osteochondral injury without degenerative PF disease.
 
-## Findings that require caution
-Do not classify as PF OA merely because of:
-- patellar maltracking without cartilage abnormality;
-- patella alta;
-- trochlear dysplasia alone;
-- Hoffa fat-pad edema;
-- patellar tendon disease;
-- MPFL injury;
-- retinacular injury;
-- isolated bone contusion.
-
-## Strong negative evidence
-- normal patellar and trochlear cartilage;
-- no patellofemoral chondral lesion;
-- degenerative disease restricted to medial or lateral tibiofemoral compartments.
-
-## Anatomical rule
-The patella and femoral trochlea define the patellofemoral compartment. Do not confuse lateral trochlear cartilage disease with lateral tibiofemoral OA.
+## Important
+Trochlear cartilage is PF, not medial/lateral tibiofemoral. High-grade focal trochlear cartilage loss can be positive even when patellar cartilage is normal.

@@ -1,39 +1,17 @@
 # Synovitis
 
-## Target definition
-Synovitis represents inflammation or abnormal proliferation of the knee synovium.
+Label 1 when the report supports synovial inflammation or proliferation.
 
-## Strong positive evidence
-- explicit diagnosis of synovitis;
-- synovial hypertrophy;
-- synovial thickening;
-- thickened or proliferative synovial tissue;
-- inflamed synovium;
-- chronic reactive synovitis;
-- effusion specifically described together with synovial hypertrophy, thickening, or inflammatory change.
+## Positive
+- Explicit synovitis/reactive synovitis/chronic synovitis.
+- Synovial hypertrophy, thickening, proliferation, or nodularity interpreted as inflammatory/reactive synovial change.
+- Effusion with clear synovial thickening/hypertrophy.
+- A final impression explicitly naming synovitis.
 
-## Supporting but not independently definitive evidence
-The following may support synovitis in a consistent inflammatory joint context:
-- substantial joint effusion or hydrops;
-- synovial plicae with synovial hypertrophy;
-- inflammatory change of the joint lining;
-- recurrent or chronic inflammatory joint fluid.
+## Negative
+- Effusion alone with no synovial abnormality.
+- Suprapatellar bursitis, plica, Hoffa edema, or Baker cyst alone.
+- Nonspecific soft-tissue edema.
 
-These findings should not automatically create a positive label without a reasonable synovial interpretation.
-
-## Findings that are insufficient alone
-Do not classify as synovitis solely because of:
-- simple joint effusion;
-- hemarthrosis after trauma;
-- bursitis;
-- Hoffa fat-pad edema;
-- subcutaneous edema;
-- osteoarthritis without inflammatory synovial findings.
-
-## Strong negative evidence
-- explicitly normal synovium;
-- absence of synovial thickening or inflammation when specifically assessed;
-- isolated non-inflammatory joint fluid without synovial abnormality.
-
-## Important distinction
-Effusion and synovitis are related but separate targets. Effusion alone is not synonymous with synovitis.
+## Caution
+Some expert labels do not align literally with report wording. Do not invent synovitis from OA or effusion alone merely to match ambiguous annotations; preserve explicit report evidence.

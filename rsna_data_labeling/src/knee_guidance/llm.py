@@ -125,7 +125,7 @@ class QwenTargetClassifier:
     ):
         raw_output = self._generate(
             prompt=prompt,
-            max_new_tokens=4096,
+            max_new_tokens=1024,
         )
 
         label = self._parse_label(

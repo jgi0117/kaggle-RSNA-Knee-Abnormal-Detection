@@ -1,43 +1,16 @@
 # Fracture
 
-## Target definition
-Fracture represents a true osseous fracture involving the knee region.
+Label 1 when the report supports a true osseous fracture.
 
-## Strong positive evidence
-- fracture;
-- cortical or trabecular fracture line;
-- tibial plateau fracture;
-- femoral condyle fracture;
-- patellar fracture;
-- fibular head fracture;
-- avulsion fracture;
-- insufficiency fracture;
-- subchondral fracture;
-- osteochondral fracture;
-- osteochondral impaction fracture when described as a fracture;
-- nondisplaced fracture;
-- displaced fracture.
+## Positive
+- Explicit fracture, subchondral fracture, insufficiency fracture, osteochondral fracture, impaction fracture, avulsion fracture, Segond fracture, hairline/nondisplaced fracture.
+- Fracture line, articular depression/collapse, cortical/subchondral break, or bony avulsion interpreted as fracture.
 
-A fracture does not need to be large or displaced to count.
+## Negative
+- Explicit no fracture when no later specific fracture is confirmed.
+- Bone contusion/bruise or marrow edema alone.
+- Chondral/osteochondral defect without a true osseous fracture.
+- Degenerative subchondral cyst/change.
 
-## Findings that require caution
-Do not classify as fracture solely for:
-- bone marrow edema;
-- bone bruise;
-- bone contusion;
-- subchondral edema;
-- osteochondral defect without fracture;
-- cartilage defect;
-- degenerative subchondral cyst;
-- suspected fracture that is ultimately excluded.
-
-Expressions such as "rule out fracture" or "cannot exclude fracture" represent uncertainty and should be interpreted together with the imaging description.
-
-## Strong negative evidence
-- no fracture;
-- no acute fracture;
-- intact osseous structures;
-- bone bruise without a fracture line or fracture diagnosis.
-
-## Contusion distinction
-Do not convert traumatic marrow edema into a fracture unless the report describes actual osseous structural failure.
+## Conflict rule
+When an early general statement says "no fracture" but a later specific finding says "osteochondral/subchondral fracture," inspect the final impression. Prefer the final impression/conclusion. If the final impression does not confirm the specific fracture, remain conservative.

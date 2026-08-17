@@ -1,60 +1,42 @@
-def build_translation_prompt(
-    report: str,
-) -> str:
-    return f"""
-You are translating a knee MRI radiology report into English.
-
-Translate the RADIOLOGY REPORT into clear medical English.
-
-IMPORTANT:
-- Preserve the original clinical meaning exactly.
-- Preserve all positive and negative findings.
-- Preserve uncertainty, including expressions such as possible, suspected,
-  favored, cannot exclude, or rule out.
-- Preserve anatomical locations and laterality.
-- Preserve severity, grading, measurements, and numerical values.
-- Do not summarize.
-- Do not add interpretations.
-- Do not infer diagnoses that are not stated.
-- Do not omit findings.
-- If the report is already in English, return it unchanged.
-- Output ONLY the translated radiology report.
-
-RADIOLOGY REPORT:
-{report}
-""".strip()
-
-
 def build_target_prompt(
     report: str,
     target: str,
     guidance: str,
 ) -> str:
     return f"""
-Classify the knee MRI report for ONLY the target below.
+You are classifying one knee MRI report for one binary target.
 
 TARGET:
 {target}
 
-GUIDANCE:
+TARGET-SPECIFIC GUIDANCE:
 {guidance}
 
-REPORT:
+MRI REPORT:
 {report}
 
-RULES:
-- Use only the REPORT as patient-specific evidence.
-- Follow the target-specific GUIDANCE.
-- Respect anatomy, negation, uncertainty, and explicit normal findings.
-- Do not infer the target from related abnormalities alone.
-- When Findings and Impression conflict, judge the report as a whole.
+Think carefully but concisely.
 
-Think carefully about the report and the target-specific guidance before deciding.
+Focus only on:
+1. decisive evidence supporting the target,
+2. decisive evidence against the target,
+3. direct conflicts between Findings and Impression/Conclusion.
 
-After reasoning, provide the final answer as exactly one JSON object:
+Rules:
+- Do not restate the full report.
+- Do not restate the full guidance.
+- Do not discuss unrelated abnormalities.
+- Prefer specific anatomical findings over vague indirect clues.
+- If Findings and Impression conflict, use the target-specific guidance to decide which evidence should take priority.
+- Do not try to infer the expert label from unrelated patterns; classify from the report and guidance.
+
+After reasoning, output exactly one JSON object:
+
 {{"target": "{target}", "label": 0}}
+
 or
+
 {{"target": "{target}", "label": 1}}
 
-Do not include any text after the final JSON object.
+Do not output any text after the final JSON object.
 """.strip()
